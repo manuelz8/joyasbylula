@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Producto — Joyas by Lula</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <div class="header-left">
+            <button class="hamburger-btn" aria-label="Menú">
+              <span></span><span></span><span></span>
+            </button>
+            <a class="logo-link" href="index.html"
+              ><img src="images/site/logo-wordmark.svg" alt="Lula"
+            /></a>
+            <nav class="desktop-nav">
+              <a href="coleccion.html">Aros</a>
+              <a href="coleccion.html">Collares</a>
+              <a href="coleccion.html">Cadenas</a>
+              <a href="coleccion.html">Dijes</a>
+              <a href="coleccion.html">Pulseras</a>
+              <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+            </nav>
+          </div>
+          <a href="#" class="cart-link" aria-label="Carrito">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <path d="M6 8h12l-1 12H7L6 8Z"></path>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="announcement">
+        Envío gratis a todo el país · Cuotas sin interés
+      </div>
+
+      <div class="drawer-backdrop"></div>
+      <nav class="drawer">
+        <img
+          class="drawer-logo"
+          src="images/site/logo-wordmark.svg"
+          alt="Lula"
+        />
+        <a href="coleccion.html">Aros</a>
+        <a href="coleccion.html">Collares</a>
+        <a href="coleccion.html">Cadenas</a>
+        <a href="coleccion.html">Dijes</a>
+        <a href="coleccion.html">Pulseras</a>
+        <div class="drawer-sep"></div>
+        <a class="drawer-sub" href="index.html#sobre-nosotros"
+          >Sobre nosotros</a
+        >
+        <a class="drawer-sub" href="#">Contacto</a>
+      </nav>
+
+      <div class="content-wrap">
+        <div class="breadcrumb">
+          <a href="index.html">Inicio</a> /
+          <a href="coleccion.html" id="breadcrumb-category">Colección</a> /
+          <span id="pdp-title-crumb"></span>
+        </div>
+
+        <div id="pdp-main">
+          <section id="gallery">
+            <div id="gallery-media"></div>
+            <div class="gallery-dots">
+              <span class="active"></span><span></span><span></span>
+            </div>
+          </section>
+
+          <section id="info">
+            <div class="pdp-badge" id="pdp-badge">Pieza única</div>
+            <h1 id="pdp-title"></h1>
+            <p class="pdp-price" id="pdp-price"></p>
+            <p class="pdp-desc" id="pdp-desc"></p>
+
+            <p class="pdp-label">Material</p>
+            <div class="variant-row" id="variant-row"></div>
+
+            <button class="add-to-cart-btn">Agregar al carrito</button>
+            <p class="stock-line" id="pdp-stock"></p>
+
+            <div class="perks-box">
+              <div class="perk">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <path d="M2 12h20M12 2v20"></path>
+                </svg>
+                Envío gratis a todo el país
+              </div>
+              <div class="perk">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  <path d="M2 10h20"></path>
+                </svg>
+                Cuotas sin interés
+              </div>
+            </div>
+
+            <div class="faq-list" id="faq-list"></div>
+          </section>
+        </div>
+
+        <section class="related-section">
+          <h2 class="section-title small">También te puede gustar</h2>
+          <div class="related-wrap">
+            <div id="related-track"></div>
+            <div class="related-arrows" id="related-arrows">
+              <button class="prev" aria-label="Anterior">‹</button>
+              <button class="next" aria-label="Siguiente">›</button>
+            </div>
+          </div>
+          <div class="related-dots" id="related-dots"></div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <img
+            class="footer-emblem"
+            src="images/site/logo-white.png"
+            alt="Joyas by Lula"
+          />
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+            <a href="#">Envíos</a>
+            <a href="#">Contacto</a>
+          </div>
+          <p class="footer-copy">© 2026 Joyas by Lula · Hecho en Argentina</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      Lula.initDrawer();
+      Lula.initProductPage();
+    </script>
+  </body>
+</html>

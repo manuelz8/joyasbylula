@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joyas by Lula — Accesorios artesanales</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <div class="header-left">
+            <button class="hamburger-btn" aria-label="Menú">
+              <span></span><span></span><span></span>
+            </button>
+            <a class="logo-link" href="index.html"
+              ><img src="images/site/logo-wordmark.svg" alt="Lula"
+            /></a>
+            <nav class="desktop-nav">
+              <a href="coleccion.html">Aros</a>
+              <a href="coleccion.html">Collares</a>
+              <a href="coleccion.html">Cadenas</a>
+              <a href="coleccion.html">Dijes</a>
+              <a href="coleccion.html">Pulseras</a>
+              <a href="#sobre-nosotros">Sobre nosotros</a>
+            </nav>
+          </div>
+          <a href="#" class="cart-link" aria-label="Carrito">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <path d="M6 8h12l-1 12H7L6 8Z"></path>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="announcement">
+        Envío gratis a todo el país · Cuotas sin interés
+      </div>
+
+      <div class="drawer-backdrop"></div>
+      <nav class="drawer">
+        <img
+          class="drawer-logo"
+          src="images/site/logo-wordmark.svg"
+          alt="Lula"
+        />
+        <a href="coleccion.html">Aros</a>
+        <a href="coleccion.html">Collares</a>
+        <a href="coleccion.html">Cadenas</a>
+        <a href="coleccion.html">Dijes</a>
+        <a href="coleccion.html">Pulseras</a>
+        <div class="drawer-sep"></div>
+        <a class="drawer-sub" href="#sobre-nosotros">Sobre nosotros</a>
+        <a class="drawer-sub" href="#">Contacto</a>
+      </nav>
+
+      <section id="hero">
+        <div class="hero-slide active">
+          <picture>
+            <source
+              media="(min-width: 860px)"
+              srcset="images/site/hero-desktop.jpg"
+            />
+            <img
+              src="images/site/home-hero-1.webp"
+              alt="Modelo — colección Tejido a Mano"
+            />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source
+              media="(min-width: 860px)"
+              srcset="images/site/hero-desktop-2.jpg"
+            />
+            <img src="images/site/home-hero-2.webp" alt="Colección Aros" />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source
+              media="(min-width: 860px)"
+              srcset="images/site/home-hero-3-desktop.webp"
+            />
+            <img
+              src="images/site/home-hero-3.webp"
+              alt="Modelo — colección Plata Eterna"
+            />
+          </picture>
+        </div>
+        <div class="hero-slide">
+          <picture>
+            <source
+              media="(min-width: 860px)"
+              srcset="images/site/home-hero-4-desktop.webp"
+            />
+            <img src="images/site/home-hero-4.webp" alt="Colección Collares" />
+          </picture>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-cta" data-pos="bottom-left">
+          <h2>
+            Joyas únicas y atemporales <br />
+            para usar todos los dias
+          </h2>
+          <a class="hero-cta-btn" href="coleccion.html">Ver colección</a>
+        </div>
+        <button class="hero-arrow prev" aria-label="Anterior">‹</button>
+        <button class="hero-arrow next" aria-label="Siguiente">›</button>
+        <div class="hero-dots">
+          <button class="active" aria-label="Ir a slide"></button>
+          <button aria-label="Ir a slide"></button>
+          <button aria-label="Ir a slide"></button>
+          <button aria-label="Ir a slide"></button>
+        </div>
+      </section>
+
+      <div class="content-wrap">
+        <section class="cat-section">
+          <h2 class="section-title">Nuestras categorías</h2>
+          <div class="carousel-wrap">
+            <div id="cat-grid">
+              <div class="cat-tile">
+                <img src="images/site/home-cat-aros.webp" alt="Aros" />
+                <a href="coleccion.html">Aros</a>
+              </div>
+              <div class="cat-tile">
+                <img src="images/site/home-cat-collares.webp" alt="Collares" />
+                <a href="coleccion.html">Collares</a>
+              </div>
+              <div class="cat-tile">
+                <img src="images/site/home-cat-cadenas.webp" alt="Cadenas" />
+                <a href="coleccion.html">Cadenas</a>
+              </div>
+              <div class="cat-tile">
+                <img src="images/site/home-cat-dijes.webp" alt="Dijes" />
+                <a href="coleccion.html">Dijes</a>
+              </div>
+              <div class="cat-tile tile-pulseras">
+                <img src="images/site/home-cat-pulseras.webp" alt="Pulseras" />
+                <a href="coleccion.html">Pulseras</a>
+              </div>
+            </div>
+            <div class="carousel-controls" id="cat-controls">
+              <button
+                class="carousel-arrow prev"
+                type="button"
+                aria-label="Anterior"
+                disabled
+              >
+                ‹
+              </button>
+              <div class="carousel-dots"></div>
+              <button
+                class="carousel-arrow next"
+                type="button"
+                aria-label="Siguiente"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section id="sobre-nosotros">
+        <div class="sn-inner">
+          <div class="sn-media">
+            <img
+              src="images/site/home-sobre-nosotros.webp"
+              alt="Taller y proceso artesanal"
+            />
+          </div>
+          <div class="sn-text">
+            <img
+              class="sn-emblem"
+              src="images/site/logo-white.png"
+              alt="Lula"
+            />
+            <h2>Hola, soy Lula</h2>
+            <p>
+              Texto placeholder sobre la historia de la marca: quién hace las
+              piezas, de dónde vienen los materiales y por qué cada joya es
+              distinta. Se reemplaza por el texto final de "sobre nosotros".
+            </p>
+            <a class="sn-cta-btn" href="coleccion.html">Ver productos</a>
+          </div>
+        </div>
+      </section>
+
+      <div class="content-wrap">
+        <section class="scroll-row-section">
+          <h2 class="section-title">Más vendidos</h2>
+          <div class="carousel-wrap">
+            <div id="bestsellers-row" class="scroll-row"></div>
+            <div class="carousel-controls" id="bestsellers-controls">
+              <button
+                class="carousel-arrow prev"
+                type="button"
+                aria-label="Anterior"
+                disabled
+              >
+                ‹
+              </button>
+              <div class="carousel-dots"></div>
+              <button
+                class="carousel-arrow next"
+                type="button"
+                aria-label="Siguiente"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="lookbook-section">
+          <div class="carousel-wrap">
+            <div id="lookbook-row">
+              <div class="lookbook-item">
+                <img
+                  src="images/site/home-lookbook-1.webp"
+                  alt="Modelo usando Aros Luna Chica"
+                />
+                <button class="shop-dot" aria-label="Ver producto">+</button>
+                <div class="shop-popover">
+                  <span>Aros Luna Chica</span>
+                  <a href="producto.html?slug=aros-luna-chica">Ver producto</a>
+                </div>
+              </div>
+              <div class="lookbook-item">
+                <img
+                  src="images/site/home-lookbook-2.webp"
+                  alt="Modelo usando Pulsera Trenzada"
+                />
+                <button class="shop-dot" aria-label="Ver producto">+</button>
+                <div class="shop-popover">
+                  <span>Pulsera Trenzada</span>
+                  <a href="producto.html?slug=pulsera-trenzada">Ver producto</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-controls" id="lookbook-controls">
+              <button
+                class="carousel-arrow prev"
+                type="button"
+                aria-label="Anterior"
+                disabled
+              >
+                ‹
+              </button>
+              <div class="carousel-dots"></div>
+              <button
+                class="carousel-arrow next"
+                type="button"
+                aria-label="Siguiente"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="scroll-row-section">
+          <h2 class="section-title" style="margin-bottom: 4px">
+            Piezas únicas
+          </h2>
+          <p class="section-subtitle">
+            Una sola unidad. Cuando se van, no vuelven.
+          </p>
+          <div class="carousel-wrap">
+            <div id="unique-grid" class="scroll-row"></div>
+            <div class="carousel-controls" id="unique-controls">
+              <button
+                class="carousel-arrow prev"
+                type="button"
+                aria-label="Anterior"
+                disabled
+              >
+                ‹
+              </button>
+              <div class="carousel-dots"></div>
+              <button
+                class="carousel-arrow next"
+                type="button"
+                aria-label="Siguiente"
+              >
+                ›
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq-home" class="faq-home-section">
+          <div class="faq-home-accordion">
+            <h2>Preguntas frecuentes</h2>
+            <div class="faq-list" id="home-faq-list">
+              <div class="faq-item open">
+                <button class="faq-question">
+                  <span>¿Los envíos son realmente gratis?</span
+                  ><span class="faq-sign">−</span>
+                </button>
+                <p class="faq-answer">
+                  Sí, el envío es gratis a todo el país en todas las compras,
+                  sin mínimo de compra.
+                </p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>¿Puedo pagar en cuotas sin interés?</span
+                  ><span class="faq-sign">+</span>
+                </button>
+                <p class="faq-answer">
+                  Sí, ofrecemos cuotas sin interés con las principales tarjetas.
+                  La cantidad de cuotas disponibles se muestra al finalizar la
+                  compra.
+                </p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>¿Qué significa que una pieza es única?</span
+                  ><span class="faq-sign">+</span>
+                </button>
+                <p class="faq-answer">
+                  Las piezas marcadas como "Pieza única" tienen una sola unidad
+                  en stock. Una vez vendidas, no se vuelven a fabricar
+                  exactamente iguales.
+                </p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>¿Cómo cuido mis joyas?</span
+                  ><span class="faq-sign">+</span>
+                </button>
+                <p class="faq-answer">
+                  Evitá el contacto con agua, perfumes y cremas, y guardá cada
+                  pieza por separado en un lugar seco para que no se raye ni se
+                  manche.
+                </p>
+              </div>
+              <div class="faq-item">
+                <button class="faq-question">
+                  <span>¿Puedo cambiar o devolver un producto?</span
+                  ><span class="faq-sign">+</span>
+                </button>
+                <p class="faq-answer">
+                  Sí, aceptamos cambios y devoluciones hasta 30 días después de
+                  la compra, siempre que la pieza no haya sido usada.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-home-media">
+            <div class="placeholder-fill">foto: preguntas frecuentes</div>
+          </div>
+        </section>
+
+        <section class="ig-section">
+          <h2 class="section-title small" style="margin-bottom: 4px">
+            @joyasbylula
+          </h2>
+          <p class="section-subtitle">Seguinos en Instagram</p>
+          <div class="ig-grid">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="ig-item"
+              aria-label="Ver en Instagram"
+            >
+              <img
+                src="images/site/home-cat-aros.webp"
+                alt="Joyas by Lula - Aros"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="ig-item"
+              aria-label="Ver en Instagram"
+            >
+              <img
+                src="images/site/home-cat-collares.webp"
+                alt="Joyas by Lula - Collares"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="ig-item"
+              aria-label="Ver en Instagram"
+            >
+              <img
+                src="images/site/home-cat-cadenas.webp"
+                alt="Joyas by Lula - Cadenas"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="ig-item"
+              aria-label="Ver en Instagram"
+            >
+              <img
+                src="images/site/home-cat-dijes.webp"
+                alt="Joyas by Lula - Dijes"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="ig-item"
+              aria-label="Ver en Instagram"
+            >
+              <img
+                src="images/site/home-cat-pulseras.webp"
+                alt="Joyas by Lula - Pulseras"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <img
+            class="footer-emblem"
+            src="images/site/logo-white.png"
+            alt="Joyas by Lula"
+          />
+          <div class="footer-links">
+            <a href="coleccion.html">Colecciones</a>
+            <a href="#sobre-nosotros">Sobre nosotros</a>
+            <a href="#">Envíos</a>
+            <a href="#">Contacto</a>
+          </div>
+          <p class="footer-copy">© 2026 Joyas by Lula · Hecho en Argentina</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      Lula.initDrawer();
+      Lula.initHero();
+      Lula.initLookbook();
+      Lula.initFaqAccordion(document.getElementById("home-faq-list"));
+
+      var bestsellerTitles = [
+        "Collar Nudo Eterno",
+        "Aros Luna Chica",
+        "Pulsera Trenzada",
+        "Cadena Fina Oro",
+      ];
+      var bestsellersRow = document.getElementById("bestsellers-row");
+      bestsellerTitles.forEach(function (title) {
+        var cell = document.createElement("div");
+        cell.appendChild(Lula.renderProductCard(Lula.byTitle(title)));
+        bestsellersRow.appendChild(cell);
+      });
+
+      var uniqueTitles = [
+        "Dije Media Luna",
+        "Collar Río",
+        "Collar Raíz",
+        "Aros Gota Única",
+      ];
+      var uniqueGrid = document.getElementById("unique-grid");
+      uniqueTitles.forEach(function (title) {
+        var cell = document.createElement("div");
+        cell.appendChild(Lula.renderProductCard(Lula.byTitle(title)));
+        uniqueGrid.appendChild(cell);
+      });
+
+      Lula.initCarousel(
+        document.getElementById("cat-grid"),
+        document.getElementById("cat-controls"),
+      );
+      Lula.initCarousel(
+        document.getElementById("bestsellers-row"),
+        document.getElementById("bestsellers-controls"),
+      );
+      Lula.initCarousel(
+        document.getElementById("lookbook-row"),
+        document.getElementById("lookbook-controls"),
+      );
+      Lula.initCarousel(
+        document.getElementById("unique-grid"),
+        document.getElementById("unique-controls"),
+      );
+    </script>
+  </body>
+</html>

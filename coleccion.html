@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Collares — Joyas by Lula</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="header-inner">
+          <div class="header-left">
+            <button class="hamburger-btn" aria-label="Menú">
+              <span></span><span></span><span></span>
+            </button>
+            <a class="logo-link" href="index.html"
+              ><img src="images/site/logo-wordmark.svg" alt="Lula"
+            /></a>
+            <nav class="desktop-nav">
+              <a href="coleccion.html">Aros</a>
+              <a href="coleccion.html">Collares</a>
+              <a href="coleccion.html">Cadenas</a>
+              <a href="coleccion.html">Dijes</a>
+              <a href="coleccion.html">Pulseras</a>
+              <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+            </nav>
+          </div>
+          <a href="#" class="cart-link" aria-label="Carrito">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.4"
+            >
+              <path d="M6 8h12l-1 12H7L6 8Z"></path>
+              <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+            </svg>
+          </a>
+        </div>
+      </header>
+      <div class="announcement">
+        Envío gratis a todo el país · Cuotas sin interés
+      </div>
+
+      <div class="drawer-backdrop"></div>
+      <nav class="drawer">
+        <img
+          class="drawer-logo"
+          src="images/site/logo-wordmark.svg"
+          alt="Lula"
+        />
+        <a href="coleccion.html">Aros</a>
+        <a href="coleccion.html">Collares</a>
+        <a href="coleccion.html">Cadenas</a>
+        <a href="coleccion.html">Dijes</a>
+        <a href="coleccion.html">Pulseras</a>
+        <div class="drawer-sep"></div>
+        <a class="drawer-sub" href="index.html#sobre-nosotros"
+          >Sobre nosotros</a
+        >
+        <a class="drawer-sub" href="#">Contacto</a>
+      </nav>
+
+      <div class="content-wrap">
+        <div class="collection-header">
+          <p class="eyebrow">Colección</p>
+          <h1>Collares</h1>
+          <p>Tejidos a mano, con plata y piezas únicas. 12 diseños.</p>
+        </div>
+
+        <div class="filter-bar">
+          <div class="sort-select-wrap">
+            <select class="sort-select">
+              <option>Relevancia</option>
+              <option>Precio: menor a mayor</option>
+              <option>Precio: mayor a menor</option>
+            </select>
+          </div>
+        </div>
+
+        <section class="collection-section">
+          <div id="product-grid"></div>
+        </section>
+      </div>
+
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <img
+            class="footer-emblem"
+            src="images/site/logo-white.png"
+            alt="Joyas by Lula"
+          />
+          <div class="footer-links">
+            <a href="index.html">Inicio</a>
+            <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+            <a href="#">Envíos</a>
+            <a href="#">Contacto</a>
+          </div>
+          <p class="footer-copy">© 2026 Joyas by Lula · Hecho en Argentina</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      Lula.initDrawer();
+      Lula.initCollectionFilters("collares");
+    </script>
+  </body>
+</html>
