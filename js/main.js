@@ -502,4 +502,46 @@
       document.getElementById("related-dots"),
     );
   };
+
+  // ── Scroll reveal animations ───────────────────────────────────────────────
+  Lula.initScrollReveal = function () {
+    var targets = Array.prototype.slice.call(
+      document.querySelectorAll(
+        ".cat-section, #sobre-nosotros, .scroll-row-section, .lookbook-section, #faq-home, .ig-section, footer.site-footer, .collection-header, .collection-section, #pdp-main, .related-section",
+      ),
+    );
+
+    if (!targets.length) return;
+
+    if (
+      typeof window === "undefined" ||
+      !("IntersectionObserver" in window) ||
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      targets.forEach(function (el) {
+        el.classList.add("revealed");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries, obs) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        rootMargin: "0px 0px -40px 0px",
+        threshold: 0.08,
+      },
+    );
+
+    targets.forEach(function (el) {
+      el.classList.add("reveal-on-scroll");
+      observer.observe(el);
+    });
+  };
 })(window);

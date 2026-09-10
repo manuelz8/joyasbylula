@@ -206,8 +206,16 @@
       var img = document.createElement("img");
       img.src = product.image;
       img.alt = product.title;
+      img.className = "card-img primary";
       img.loading = "lazy";
       media.appendChild(img);
+
+      var hoverImg = document.createElement("img");
+      hoverImg.src = "images/site/home-lookbook-2.webp";
+      hoverImg.alt = product.title + " en uso";
+      hoverImg.className = "card-img hover-img";
+      hoverImg.loading = "lazy";
+      media.appendChild(hoverImg);
     } else {
       var ph = document.createElement("div");
       ph.className = "placeholder-fill";
